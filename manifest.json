@@ -10,7 +10,8 @@
     {
       "src": "https://res.cloudinary.com/dxcywxeqq/image/upload/v1715947627/pidgelixzoh7dr20kaf2.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "maskable"
     }
   ]
 }
