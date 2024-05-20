@@ -22,11 +22,13 @@
   "screenshots": [
     {
       "src": "https://res.cloudinary.com/dxcywxeqq/image/upload/v1716208462/Screenshot-mobile_zuvxsr.png",
-      "type": "narrow"
+      "type": "narrow",
+      "sizes": ["240px", "320px", "480px"]
     },
     {
       "src": "https://res.cloudinary.com/dxcywxeqq/image/upload/v1716208449/Screenshot-desktop_uuq43l.png",
-      "type": "desktop"
+      "type": "desktop",
+      "sizes": ["1024px", "1366px", "1920px"]
     }
   ]
 }
