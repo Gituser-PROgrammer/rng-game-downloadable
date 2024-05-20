@@ -18,5 +18,15 @@
       "type": "image/png",
       "sizes": "192x192"
     }
+  ],
+  "screenshots": [
+    {
+      "src": "https://res.cloudinary.com/dxcywxeqq/image/upload/v1716208462/Screenshot-mobile_zuvxsr.png",
+      "type": "narrow"
+    },
+    {
+      "src": "https://res.cloudinary.com/dxcywxeqq/image/upload/v1716208449/Screenshot-desktop_uuq43l.png",
+      "type": "desktop"
+    }
   ]
 }
