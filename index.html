@@ -72,8 +72,18 @@
       </footer>
     </div>
 
-    <script src="/app.js"></script>
+    <script src="sw.js"></script>
     <script>
+      if("serviceWorker" in navigator){
+        navigator.serviceWorker.register("sw.js").then(registration =>{
+          console.log("SW registered");
+          console.log(registration);
+        }).catch(error => {
+          console.log("SW Registration failed");
+          console.log(error);
+        });
+      }
+      
       const gameButton = document.getElementById("gameEnter");
       const gamePlay = document.getElementById("enteredGame");
       const guessButton = document.getElementById("guessButton");
