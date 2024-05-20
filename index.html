@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Number Guessing Game</title>
+    <meta name="theme-color" content="#faf7fd" />
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/dxcywxeqq/image/upload/v1715947627/pidgelixzoh7dr20kaf2.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <link
+      rel="apple-touch-icon"
+      href="https://res.cloudinary.com/dxcywxeqq/image/upload/v1715947627/pidgelixzoh7dr20kaf2.png"
+    />
+  </head>
+  <style>
+    @font-face {
+      font-family: "Headfont";
+      src: url("https://res.cloudinary.com/dxcywxeqq/raw/upload/v1705039144/Lobster-Regular_rhqhgo.ttf");
+    }
+    @font-face {
+      font-family: "Bodyfont";
+      src: url("https://res.cloudinary.com/dxcywxeqq/raw/upload/v1705039394/Salsa-Regular_wajyw3.ttf");
+    }
+    body {
+      background-image: url("https://img.freepik.com/free-vector/abstract-colorful-background_23-2148929192.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1701043200&semt=ais");
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      text-align: center;
+      color: white;
+      font-family: Bodyfont, sans-serif;
+      font-size: 1.2em;
+    }
+    #mainGame {
+      background-color: rgba(153, 9, 237, 0.8);
+    }
+    header {
+      font-family: Headfont, sans-serif;
+      font-size: 1.3em;
+      color: rgb(66, 233, 15);
+    }
+    button {
+      background-color: rgba(100, 65, 255, 1);
+      color: white;
+      font-size: 1.1em;
+    }
+  </style>
+  <body>
+    <div id="mainGame">
+      <header>↩️Welcome to the Random Number Guessing Game!↪️</header>
+      <br />
+      <details title="Game rules">
+        <summary>Game Rules</summary>
+        You have to guess a number from 1 to 100. You have to guess the number
+        chosen, good luck!
+      </details>
+      <br />
+      <button id="gameEnter">Play</button> <br /><br />
+      <div id="enteredGame" style="display: none">
+        <label for="numberValue">Guess a number: </label>
+        <input type="number" id="numberGuessed" />
+        <button id="guessButton">Guess</button> <br />(Reload to retry)<br />
+      </div>
+      <div id="guessHelp"></div>
+      <br /><br />
+      <footer>
+        Copyright&copy;,Version 1.3, All Rights Reserved. <br />Sai Sriyan Nakka
+      </footer>
+    </div>
+
+    <script src="/app.js"></script>
+    <script>
+      const gameButton = document.getElementById("gameEnter");
+      const gamePlay = document.getElementById("enteredGame");
+      const guessButton = document.getElementById("guessButton");
+      const numberGuessedInput = document.getElementById("numberGuessed");
+      const guessedHelp = document.getElementById("guessHelp");
+
+      let chances = 0;
+      let randNum = Math.floor(Math.random() * 100) + 1;
+      console.log(randNum);
+
+      gameButton.onclick = function () {
+        gamePlay.style.display = "block";
+        gameButton.style.display = "none";
+      };
+
+      guessButton.onclick = function () {
+        let numberGuessed = parseInt(numberGuessedInput.value);
+
+        if (isNaN(numberGuessed)) {
+          guessedHelp.innerHTML = "Please enter a valid number.";
+        } else {
+          if (numberGuessed > randNum) {
+            guessedHelp.innerHTML = "Go Lower! ⬇️";
+            guessedHelp.style.color = "white";
+            chances++;
+          } else if (numberGuessed < randNum) {
+            guessedHelp.innerHTML = "Go Higher! ⬆️";
+            guessedHelp.style.color = "white";
+            chances++;
+          } else {
+            chances++;
+            enteredGame.style.display = "none";
+            guessedHelp.innerHTML = `🎉You got it! The number is ${randNum}. You got in ${chances} chance(s)!🎉 Reload to play again.`;
+            guessedHelp.style.color = "lightgreen";
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

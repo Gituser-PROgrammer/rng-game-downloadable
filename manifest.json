@@ -1,0 +1,16 @@
+{
+  "name": "Random Number Guessing Game",
+  "short_name": "RNG Game",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#7d0cc6",
+  "theme_color": "#faf7fd",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://res.cloudinary.com/dxcywxeqq/image/upload/v1715947627/pidgelixzoh7dr20kaf2.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
