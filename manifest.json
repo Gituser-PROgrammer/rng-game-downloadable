@@ -1,6 +1,7 @@
 {
   "name": "Random Number Guessing Game",
   "short_name": "RNG Game",
+  "description": "Random Number Guessing Game",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#7d0cc6",
