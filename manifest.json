@@ -39,16 +39,18 @@
       "sizes": "32x32"
     }
   ],
+  {
   "screenshots": [
     {
       "src": "https://res.cloudinary.com/dxcywxeqq/image/upload/v1716208462/Screenshot-mobile_zuvxsr.png",
-      "type": "narrow",
-      "sizes": "434×505"
+      "type": "image/png",
+      "sizes": "434x505"
     },
     {
       "src": "https://res.cloudinary.com/dxcywxeqq/image/upload/v1716208449/Screenshot-desktop_uuq43l.png",
-      "type": "desktop",
-      "sizes": "1347×462"
+      "type": "image/png",
+      "sizes": "1347x462"
     }
   ]
+
 }
