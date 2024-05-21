@@ -49,7 +49,8 @@
     {
       "src": "https://res.cloudinary.com/dxcywxeqq/image/upload/v1716208449/Screenshot-desktop_uuq43l.png",
       "type": "image/png",
-      "sizes": "1347x462"
+      "sizes": "1347x462",
+      "form_factor": "wide"
     }
   ]
 
