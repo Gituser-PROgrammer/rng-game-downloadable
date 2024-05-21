@@ -43,12 +43,12 @@
     {
       "src": "https://res.cloudinary.com/dxcywxeqq/image/upload/v1716208462/Screenshot-mobile_zuvxsr.png",
       "type": "narrow",
-      "sizes": ["240px", "320px", "480px"]
+      "sizes": "434×505"
     },
     {
       "src": "https://res.cloudinary.com/dxcywxeqq/image/upload/v1716208449/Screenshot-desktop_uuq43l.png",
       "type": "desktop",
-      "sizes": ["1024px", "1366px", "1920px"]
+      "sizes": "1347 × 462"
     }
   ]
 }
