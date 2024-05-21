@@ -3,7 +3,7 @@
   "short_name": "RNG Game",
   "description": "Random Number Guessing Game",
   "start_url": ".",
-  "display": "fullscreen",
+  "display": "standalone",
   "background_color": "#7d0cc6",
   "theme_color": "#faf7fd",
   "orientation": "any",
