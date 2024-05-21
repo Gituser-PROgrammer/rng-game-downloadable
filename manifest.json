@@ -6,7 +6,7 @@
   "display": "standalone",
   "background_color": "#7d0cc6",
   "theme_color": "#faf7fd",
-  "orientation": "portrait-primary",
+  "orientation": "any",
   "icons": [
     {
       "src": "https://res.cloudinary.com/dxcywxeqq/image/upload/v1715947627/pidgelixzoh7dr20kaf2.png",
